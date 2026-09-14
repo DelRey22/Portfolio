@@ -1,6 +1,6 @@
 ---
 title: "Discrete Op-Amp"
-date: 2026-09-14
+date: 2025-03-10
 summary: "A two-stage amplifier built from discrete BJTs — 80 dB open-loop gain, measured against the hand-calculated model."
 tags: ["analog", "discrete design"]
 cover:
