@@ -10,6 +10,6 @@ site is already the formal version.
 
 ## Contact
 
-**Email:** you@uah.edu
-**Office:** Building and room number
+**Email:** rs0155@uah.edu
+**Office:** ENG242D
 **Location:** Huntsville, Alabama
