@@ -1,0 +1,53 @@
+{{- /* KaTeX, only on pages with `math: true` in front matter. */ -}}
+{{ if .Param "math" }}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+  onload="renderMathInElement(document.body,{delimiters:[
+    {left:'$$',right:'$$',display:true},
+    {left:'$',right:'$',display:false},
+    {left:'\\(',right:'\\)',display:false},
+    {left:'\\[',right:'\\]',display:true}]});"></script>
+{{ end }}
+
+<style>
+/* ---- home hero ---- */
+.grad-hero{display:grid;grid-template-columns:1fr 240px;gap:46px;align-items:start;
+  padding:34px 0 10px;border-bottom:1px solid var(--border);margin-bottom:34px}
+.grad-hero h1{font-size:2.3rem;line-height:1.15;margin:0 0 6px}
+.grad-role{color:var(--secondary);font-size:1.02rem;margin:0 0 16px}
+.grad-bio{color:var(--content);line-height:1.68}
+.grad-bio p{margin:0 0 12px}
+.grad-hero-photo img{width:100%;height:auto;border-radius:6px;display:block}
+.grad-loc{text-align:center;color:var(--secondary);font-size:.86rem;margin:10px 0 0}
+.grad-hero .buttons{margin:18px 0 4px;justify-content:flex-start}
+.grad-hero .social-icons{justify-content:flex-start;padding:6px 0}
+
+/* ---- home sections ---- */
+.grad-home h2{font-size:1.25rem;margin:38px 0 4px;padding-bottom:8px;border-bottom:1px solid var(--border)}
+.grad-home h2 + p{color:var(--secondary);margin-top:10px}
+
+/* ---- focus cards ---- */
+.focus{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin:20px 0 6px}
+.focus article{background:var(--entry);border:1px solid var(--border);border-radius:8px;padding:18px 20px}
+.focus h3{margin:0 0 8px;font-size:1.03rem}
+.focus p{margin:0 0 12px;font-size:.94rem;color:var(--content);line-height:1.55}
+.focus .tags{display:flex;flex-wrap:wrap;gap:6px}
+.focus .tags span{font-size:.76rem;color:var(--secondary);background:var(--theme);
+  border:1px solid var(--border);border-radius:20px;padding:2px 9px}
+
+/* ---- news ---- */
+.news{border-top:1px solid var(--border);margin-top:18px}
+.news li{display:grid;grid-template-columns:118px 1fr;gap:20px;padding:14px 0;
+  border-bottom:1px solid var(--border);list-style:none}
+.news ul,.news ol{margin:0;padding:0}
+.news time{color:var(--secondary);font-size:.88rem;font-variant-numeric:tabular-nums}
+.news p{margin:0;font-size:.96rem;line-height:1.55}
+
+@media (max-width:700px){
+  .grad-hero{grid-template-columns:1fr;gap:24px}
+  .grad-hero-photo{max-width:170px}
+  .grad-hero h1{font-size:1.85rem}
+  .news li{grid-template-columns:1fr;gap:3px}
+}
+</style>

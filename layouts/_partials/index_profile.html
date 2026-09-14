@@ -1,0 +1,32 @@
+{{- /* Custom home page: photo beside intro, then whatever is in content/_index.md */ -}}
+<div class="grad-hero">
+  {{- with site.Params.profileMode }}
+  <div class="grad-hero-text">
+    <h1>{{ .title | default site.Title | markdownify }}</h1>
+    {{- with .role }}<p class="grad-role">{{ . | markdownify }}</p>{{ end }}
+    <div class="grad-bio">{{ .subtitle | markdownify }}</div>
+    {{- with .buttons }}
+    <div class="buttons">
+      {{- range . }}
+      <a class="button" href="{{ trim .url " " }}" rel="noopener" title="{{ .name }}">
+        <span class="button-inner">{{ .name }}</span>
+      </a>
+      {{- end }}
+    </div>
+    {{- end }}
+    {{- partial "social_icons.html" -}}
+  </div>
+  {{- with .imageUrl }}
+  <div class="grad-hero-photo">
+    <img src="{{ . | absURL }}" alt="{{ $.Site.Params.profileMode.imageTitle | default "Profile photo" }}"
+         width="{{ $.Site.Params.profileMode.imageWidth | default 240 }}"
+         height="{{ $.Site.Params.profileMode.imageHeight | default 240 }}" />
+    {{- with site.Params.profileMode.location }}<p class="grad-loc">{{ . }}</p>{{ end }}
+  </div>
+  {{- end }}
+  {{- end }}
+</div>
+
+{{- if .Content }}
+<div class="post-content md-content grad-home">{{ .Content }}</div>
+{{- end }}

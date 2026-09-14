@@ -1,0 +1,126 @@
+baseURL: "https://example.com/"   # <-- change to your real URL once deployed
+locale: en-us
+title: "Reymund Santiago"
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+pagination:
+  pagerSize: 10
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+# Needed for the search page to work
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  env: production
+  title: "Reymund Santiago"
+  description: "Electrical Engineering Portfolio."
+  keywords: [Analog Electronics | Embedded Systems]
+  defaultTheme: auto          # auto | light | dark
+  ShowShareButtons: false
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowToc: true
+  TocOpen: false
+  hidemeta: false
+  comments: false
+
+  # ---- The front page block: photo, name, blurb, buttons ----
+  profileMode:
+    enabled: true
+    title: "Reymund Santiago"
+    role: "M.S. student, Electrical Engineering · University of Alabama in Huntsville"
+    location: "Huntsville, AL"
+    subtitle: |
+      This is my personal website where I upload my various projects.
+      I am currently pursing my Masters in Electrical Engineering at
+      UAH. My primary interest are electronics and embedded systems. 
+
+      
+    imageUrl: "/images/headshot.jpg"
+    imageTitle: "Your Name"
+    imageWidth: 240
+    imageHeight: 240
+    buttons:
+      - name: Research
+        url: /research/
+      - name: Publications
+        url: /publications/
+      - name: CV
+        url: /cv.pdf
+
+  # ---- Icon links under the photo ----
+  socialIcons:
+    - name: googlescholar
+      url: "https://scholar.google.com/citations?user=YOURID"
+    - name: orcid
+      url: "https://orcid.org/0000-0000-0000-0000"
+    - name: github
+      url: "https://github.com/yourhandle"
+    - name: linkedin
+      url: "https://linkedin.com/in/yourhandle"
+    - name: email
+      url: "mailto:you@example.com"
+
+  assets:
+    disableHLJS: false
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    threshold: 0.4
+    keys: ["title", "permalink", "summary", "content"]
+
+# ---- The tabs across the top ----
+menu:
+  main:
+    - identifier: research
+      name: Research
+      url: /research/
+      weight: 10
+    - identifier: publications
+      name: Publications
+      url: /publications/
+      weight: 20
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 30
+    - identifier: notes
+      name: Notes
+      url: /notes/
+      weight: 40
+    - identifier: cv
+      name: CV
+      url: /cv/
+      weight: 50
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 60
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 70
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true      # lets you use raw HTML inside Markdown
+  highlight:
+    noClasses: false
+    codeFences: true
+    guessSyntax: true
+    lineNos: false
+    style: monokai
