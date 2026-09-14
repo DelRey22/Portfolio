@@ -67,7 +67,7 @@ params:
     - name: orcid
       url: "https://orcid.org/0000-0000-0000-0000"
     - name: github
-      url: "https://github.com/yourhandle"
+      url: "https://github.com/DelRey22"
     - name: linkedin
       url: "https://www.linkedin.com/in/reymund-santiago"
     - name: email
