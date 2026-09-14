@@ -6,13 +6,15 @@ ShowToc: true
 ---
 ## Lab Equipment
 
-**Siglent SDS1202X-E
+**Siglent SDS1202X-E**
 
-**Agilient 3630A
+**Analog Discovery 3**
 
-**Agilient 3010
+**Agilient 3630A**
 
-**Agilient 53131a
+**Agilient 3010**
 
-**BK Precision 4040A 
+**Agilient 53131a**
+
+**BK Precision 4040A**
 
