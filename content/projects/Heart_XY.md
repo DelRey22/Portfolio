@@ -7,12 +7,11 @@ summary: "Analog design that uses op amps to display a heart on an oscilloscope 
 tags: ["analog", "discrete design"]
 cover:
   image: "/images/discrete-op-amp.png"
-  alt: "Discrete op-amp on perfboard"
+  alt: "PCB"
   relative: false
 math: true
 ---
 
 ## What it does
 
-Your write-up starts here. Regular Markdown — `##` for headings,
-`**bold**`, `-` for bullets.
+Will update soon. 

@@ -4,9 +4,10 @@ url: "/about/"
 summary: "About me"
 ---
 
-A short personal page. What brought you to this field, what you do when
-you're not in the lab, what you're reading. Keep it human — the rest of the
-site is already the formal version.
+What brought me to the world of electronics? Curiosity! Growing up I had a knack for mechanical systems but 
+as I entered high school electronics seemed like a mystery. I decided to to tear apart old electronics
+to see how these functioned. When ever I am not at school or behind my desk I am enjoying the nature the world 
+has to offer. As I have aged I have gained a true apprectiation for poetry and theatre. The world is an art piece.
 
 ## Contact
 
