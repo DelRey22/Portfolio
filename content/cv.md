@@ -12,7 +12,7 @@ ShowToc: true
 
 **B.S. Electrical Engineering**, University of Alabama in Huntsville — 2026
 
-**A.A.S Electrical Engineering**, Snead State Community College - 2024
+**A.A.S Electrical Engineering**, Snead State Community College — 2024
 
 
 ## Teaching
@@ -21,7 +21,7 @@ ShowToc: true
 
 EE384: Digital Signal Processing Lab — Fall 2026
 
-EE386: Introduction to Control and Robotic Systems Lab - Fall 2026
+EE386: Introduction to Control and Robotic Systems Lab — Fall 2026
 
 
 ## Industry Experience
